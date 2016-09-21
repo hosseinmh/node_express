@@ -2,7 +2,6 @@
 
 first section that use http node module 
 
-# for use this code :
 
 # for use this code :
 
