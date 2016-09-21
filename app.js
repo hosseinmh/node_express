@@ -7,3 +7,6 @@ var server = http.createServer(function(request,respond) {
     respond.end();
     
 });
+server.listen('2000',function(){
+    consolel.log('server is runnig in port 2000');
+});
