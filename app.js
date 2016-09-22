@@ -5,7 +5,21 @@ var app= express();
 app.set('port',process.env.PORT||2000);
 
 app.get('/',function(req,res){
-    res.send('<h1>we are usnig node js and express :)</h1>');
+    
+    var info ='';
+    dateFile.speakers.forEach(function(item){
+       info+=`
+        <li>
+            <h2>${item.name}</h2>
+            <p>${item.summery}</p>
+        </li>
+    `; 
+    });
+    
+    res.send(`
+    <h1>we are usnig node js and express :)</h1>
+    ${info}
+`);
 });
 
 
