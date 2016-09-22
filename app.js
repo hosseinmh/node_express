@@ -6,26 +6,17 @@ app.set('port',process.env.PORT||2000);
 
 app.get('/',function(req,res){
     
-    var info ='';
-    dateFile.speakers.forEach(function(item){
-       info+=`
-        <li>
-            <h2>${item.name}</h2>
-            <p>${item.summary}</p>
-        </li>
-    `; 
-    });
-    
+   
     res.send(`
-    <h1>we are usnig node js and express :)</h1>
-    ${info}
+    <h1welcome to learn node and express :)</h1>
+
 `);
     
 });
 
 
 
-app.get('/',function(req,res){
+app.get('/speakers',function(req,res){
     
     var info ='';
     dateFile.speakers.forEach(function(item){
