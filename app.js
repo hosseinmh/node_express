@@ -24,6 +24,27 @@ app.get('/',function(req,res){
 });
 
 
+
+app.get('/',function(req,res){
+    
+    var info ='';
+    dateFile.speakers.forEach(function(item){
+       info+=`
+        <li>
+            <h2>${item.name}</h2>
+            <p>${item.summary}</p>
+        </li>
+    `; 
+    });
+    
+    res.send(`
+    <h1>we are usnig node js and express :)</h1>
+    ${info}
+`);
+    
+});
+
+
 var dateFile =require('./data/data.json');
 
 
