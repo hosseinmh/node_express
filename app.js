@@ -20,6 +20,7 @@ app.get('/',function(req,res){
     <h1>we are usnig node js and express :)</h1>
     ${info}
 `);
+    
 });
 
 
