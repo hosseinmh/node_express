@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app= express();
-
+var dateFile =require('./data/data.json');
 app.set('port',process.env.PORT||2000);
 
 app.get('/',function(req,res){
@@ -41,11 +41,11 @@ app.get('/speakers',function(req,res){
 
 app.get('/speakers/:speakersid',function(req,res){
     
-    var speakers = dateFile.speakers[req.param.speakersid];
+    var speaker = dateFile.speakers[req.params.speakersid];
     res.send(`
-    <h1>${speakers,title}</h1>
-    <p>${speakers.name}</p>
-    <p>${speakers.summary}</p>
+    <h1>${speaker.title}</h1>
+    <p>with${speaker.name}</p>
+    <p>${speaker.summary}</p>
 
 
 `);
@@ -53,7 +53,7 @@ app.get('/speakers/:speakersid',function(req,res){
 });
 
 
-var dateFile =require('./data/data.json');
+
 
 
 var server = app.listen(app.get('port'),function(){
