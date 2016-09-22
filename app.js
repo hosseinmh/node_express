@@ -11,5 +11,5 @@ var dateFile =require('./data/data.json');
 
 
 var server = app.listen('app.get('port)',function(){
-    console.log('server is runnig on ' + port);
+    console.log('server is runnig on ' + app.get('port'));
 });
