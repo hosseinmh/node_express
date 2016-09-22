@@ -11,7 +11,7 @@ app.get('/',function(req,res){
        info+=`
         <li>
             <h2>${item.name}</h2>
-            <p>${item.summery}</p>
+            <p>${item.summary}</p>
         </li>
     `; 
     });
