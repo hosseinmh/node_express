@@ -40,7 +40,7 @@ app.get('/speakers',function(req,res){
 
 app.get('/speakers/:speakersid',function(req,res){
     
-    var speakers = dateFile.speakers.[req.param.speakersid];
+    var speakers = dateFile.speakers[req.param.speakersid];
     res.send(`
     <h1>${speakers,title}</h1>
     <p>${speakers.name}</p>
