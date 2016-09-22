@@ -8,7 +8,8 @@ app.get('/',function(req,res){
     
    
     res.send(`
-    <h1welcome to learn node and express :)</h1>
+    <h1>welcome :)</h1>
+    <p>we use express</p>
 
 `);
     
