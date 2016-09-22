@@ -6,6 +6,8 @@ app.get('/',function(req,res){
     res.send('<h1>we are usnig node js and express :)');
 });
 
+var dateFile =require('./data/data.json');
+
 var server = app.listen('2000',function(){
     console.log('server is runnig ');
 });
