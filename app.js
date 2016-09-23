@@ -22,4 +22,5 @@ var async_buffer = fs.readFile(process.cwd()+"\\info.txt",function(error,buff){
 
 fs.readFile(process.cwd()+"\\to.txt",function(error,data){
     
+    
 });
