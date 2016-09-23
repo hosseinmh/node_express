@@ -15,7 +15,7 @@ var async_buffer = fs.readFile(process.cwd()+"\\info.txt",function(error,buff){
         console.log("somthing is wrong ");
     }
     else{
-        console.log("the weork is done ");
+        console.log("the work is done ");
     }
         
 });
