@@ -20,13 +20,13 @@ var async_buffer = fs.readFile(process.cwd()+"\\info.txt",function(error,buff){
         
 });
 
-fs.readFile(process.cwd()+"\\to.txt",function(error,data){
+fs.readFile(process.cwd()+"\\info.txt",function(error,data){
     if(error){
         console.log(error);
         console.log('we have some trouble ');
     }
     else{
-        fs.writeFile(process.cwd()+"\\to.txt",function(err,buff){
+        fs.writeFile(process.cwd()+"\\to.txt",data,function(err){
             if(err){
                 console.log(err);
             }
