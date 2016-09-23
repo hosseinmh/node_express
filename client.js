@@ -2,7 +2,7 @@ var http =require('http');
 
 var option ={
     hostname:"localhost" ,
-    port:"8000"    ,
+    port:8000    ,
     method:"GET"    ,
     path:"/"    
 };
@@ -12,3 +12,4 @@ var request = http.request(option,function(res){
        console.log(chunk) ;
     });
 });
+request.end();
