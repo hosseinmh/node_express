@@ -8,7 +8,7 @@ var buffer = fs.readFileSync(process.cwd()+"\\info.txt");
 console.log(buffer.toString());
 
 
-var async_buffer = fs.readFile(process.cwd(),function(error,buff){
+var async_buffer = fs.readFile(process.cwd()+"\\info.txt",function(error,buff){
     
     if(error){
         console.log(error);
