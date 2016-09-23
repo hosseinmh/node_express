@@ -1,6 +1,6 @@
 var http =require('http');
 
-var option {
+var option ={
     hostname:"localhost" ,
     port:"8000"    ,
     method:"GET"    ,
