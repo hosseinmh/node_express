@@ -1,12 +1,9 @@
-var http =require('http');
+var http = require('http');
+var path= require('path');
+var fs = require('fs');
+var url = require('url');
 
-
-var server = http.createServer(function(request,respond) {
-    respond.writeHead(200,{"Content-Type":"text/html"});
-    respond.write('<h1>welcome to learning node js ');
-    respond.end();
+http.createServer(function(){
+    var uri = url.parse(req.url).pathname;
     
-});
-server.listen('2000',function(){
-    console.log('server is runnig in port 2000');
 });
