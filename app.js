@@ -25,5 +25,16 @@ fs.readFile(process.cwd()+"\\to.txt",function(error,data){
         console.log(error);
         console.log('we have some trouble ');
     }
+    else{
+        fs.writeFile(process.cwd()+"\\to.txt",function(err,buff){
+            if(err){
+                console.log(err);
+            }
+            else{
+                console.log("we done it :))))");
+            }
+            
+        });
+    }
     
 });
