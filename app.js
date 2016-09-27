@@ -3,7 +3,7 @@ var path= require('path');
 var fs = require('fs');
 var url = require('url');
 
-http.createServer(function(){
+http.createServer(function(req,res){
     var uri = url.parse(req.url).pathname;
     var fileName = path.join(precess.cwd(),unescape(uri));
     console.log('loading ' +uri);
@@ -12,7 +12,7 @@ http.createServer(function(){
     try{
         states= fs.lstatSync(fileName)    ;
     }
-    catch{
+    catch(errrr){
         res.weiteHead(404 , {'Content-Type':'text/plain'}); 
     res.write('the page not founf 404 ');
     res.end();
